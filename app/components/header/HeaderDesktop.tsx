@@ -9,7 +9,7 @@ import HeaderMobile from "./HeaderMobile";
 function HeaderDesktop() {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <nav className="inline-flex justify-between items-center w-full pt-7 md:pt-[89px]  ">
+    <nav className="flex justify-between items-center w-full pt-7 md:pt-[89px] ">
       <Image
         src="/images/logo.svg"
         width={60}
@@ -37,14 +37,8 @@ function HeaderDesktop() {
         </li>
       </ul>
 
-      <button onClick={() => setIsOpen(!isOpen)}>
-        <Image
-          src="/images/icon-menu.svg"
-          alt="menu"
-          width={40}
-          height={19}
-          className="w-auto md:hidden "
-        />
+      <button className="w-auto md:hidden " onClick={() => setIsOpen(!isOpen)}>
+        <Image src="/images/icon-menu.svg" alt="menu" width={40} height={19} />
       </button>
 
       <HeaderMobile isOpen={isOpen} setIsOpen={setIsOpen} />

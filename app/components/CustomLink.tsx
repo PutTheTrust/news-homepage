@@ -8,7 +8,7 @@ interface CustomLinkProps {
 
 const CustomLink: FC<CustomLinkProps> = ({ label, color }) => {
   return (
-    <Link href="#" className={`${color} hover:text-green-500 transition`}>
+    <Link href="#" className={`${color} hover:text-soft-orange transition`}>
       {label}
     </Link>
   );
