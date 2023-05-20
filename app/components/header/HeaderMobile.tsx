@@ -15,7 +15,7 @@ const HeaderMobile: FC<HeaderMobileProps> = ({ isOpen, setIsOpen }) => {
         isOpen ? "bg-black/50 w-full h-full top-0 left-0  absolute" : "hidden"
       }
     >
-      <nav className="absolute top-0 right-0 w-[65%] h-full z-50 bg-white pt-7">
+      <nav className="absolute top-0 right-0 w-[65%] h-full z-50 bg-background pt-7">
         <button className="block ml-auto mr-5" onClick={() => setIsOpen(false)}>
           <Image
             src="/images/icon-menu-close.svg"
