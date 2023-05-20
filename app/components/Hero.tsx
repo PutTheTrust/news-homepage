@@ -30,7 +30,7 @@ function Hero() {
           />
         </div>
 
-        <div className="md:mt-auto md:flex md:justify-between md:gap-20 md:items-center">
+        <div className="md:mt-auto md:flex md:justify-between md:gap-[52px] md:items-center">
           <h1 className="text-5xl font-extrabold mt-4 md:w-1/2">
             The Bright Future of Web 3.0?
           </h1>
