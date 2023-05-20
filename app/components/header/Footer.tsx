@@ -3,7 +3,7 @@ import FooterIcon from "./FooterIcon";
 
 function Footer() {
   return (
-    <div className="flex flex-col gap-8 my-4">
+    <div className="flex flex-col gap-8 mb-4 mt-10 md:flex-row">
       {footerNews.map((item) => (
         <FooterIcon
           key={item.id}
