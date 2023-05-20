@@ -3,14 +3,12 @@ import { FC } from "react";
 
 interface CustomLinkProps {
   label: string;
+  color: string;
 }
 
-const CustomLink: FC<CustomLinkProps> = ({ label }) => {
+const CustomLink: FC<CustomLinkProps> = ({ label, color }) => {
   return (
-    <Link
-      href="#"
-      className="text-grayish-blue-dark hover:text-soft-orange transition"
-    >
+    <Link href="#" className={`${color} hover:text-green-500 transition`}>
       {label}
     </Link>
   );

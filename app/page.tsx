@@ -6,7 +6,6 @@ export default function Home() {
   return (
     <main>
       <HeaderDesktop />
-      <HeaderMobile />
 
       <p>News Site</p>
     </main>
