@@ -10,8 +10,8 @@ interface newsType {
 
 function Hero() {
   return (
-    <div className="mt-5">
-      <div>
+    <div className="mt-5 md:flex md:justify-between gap-8 h-full">
+      <div className="md:w-[65%] md:flex md:flex-col">
         <div>
           <Image
             src="/images/image-web-3-mobile.jpg"
@@ -26,27 +26,29 @@ function Hero() {
             alt="Hero"
             width={730}
             height={300}
-            className="hidden md:block w-auto"
+            className="hidden md:block w-full"
           />
         </div>
 
-        <div>
-          <h1 className="text-5xl font-extrabold mt-4">
+        <div className="md:mt-auto md:flex md:justify-between md:gap-20 md:items-center">
+          <h1 className="text-5xl font-extrabold mt-4 md:w-1/2">
             The Bright Future of Web 3.0?
           </h1>
-          <p className="text-grayish-blue-dark mt-4">
-            We dive into the next evolution of the web that claims to put power
-            of the platforms back into the hands of the people. But is it really
-            fulfilling its promise?
-          </p>
+          <div className="md:flex-1">
+            <p className="text-grayish-blue-dark mt-4">
+              We dive into the next evolution of the web that claims to put
+              power of the platforms back into the hands of the people. But is
+              it really fulfilling its promise?
+            </p>
 
-          <button className="uppercase bg-soft-red my-4 w-[184px] h-10 text-white font-bold tracking-widest text-sm">
-            Read more
-          </button>
+            <button className="uppercase bg-soft-red my-4 w-[184px] h-10 text-white font-bold tracking-widest text-sm hover:bg-dark-blue transition md:my-0 md:mt-6">
+              Read more
+            </button>
+          </div>
         </div>
       </div>
 
-      <aside className="bg-dark-blue px-5 py-4">
+      <aside className="bg-dark-blue px-5 py-4 flex-1">
         <h2 className="text-soft-orange font-bold text-2xl">New</h2>
 
         {news.map((item, idx) => (
