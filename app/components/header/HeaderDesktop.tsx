@@ -16,7 +16,7 @@ function HeaderDesktop() {
         height={40}
         alt="Logo"
         priority={true}
-        className="md:w-auto sm:w-45 sm:h-28"
+        className="md:w-auto object-contain"
       />
 
       <ul className="md:inline-flex gap-10 hidden">
